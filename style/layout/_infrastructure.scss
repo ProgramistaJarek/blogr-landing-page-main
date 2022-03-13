@@ -1,0 +1,54 @@
+.infrastructure {
+  padding: 10rem 2rem 8rem;
+  color: $white;
+  margin-top: 15rem;
+  background: url(/images/bg-pattern-circles.svg),
+    linear-gradient(180deg, $very-dark-gray-blue 0%, $very-dark-desaturated-blue 100%);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  position: relative;
+  .text-infra {
+    text-align: center;
+    font-family: $font-Ubuntu;
+    margin-top: 2rem;
+    h2 {
+      font-weight: $font-300;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      color: $grayish-blue;
+      font-weight: $font-300;
+      font-size: $font-size;
+      line-height: 1.5rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+
+.circle {
+  position: absolute;
+  top: -10rem;
+  img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .infrastructure {
+    background-position: left;
+    .text-infra {
+      max-width: 50%;
+      margin-top: 0;
+      text-align: left;
+    }
+  }
+  .circle {
+    left: 0;
+    top: -15rem;
+  }
+}

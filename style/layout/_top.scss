@@ -1,0 +1,32 @@
+.top {
+  margin: 5rem 0;
+  text-align: center;
+  font-family: $font-Ubuntu;
+  font-weight: $font-400;
+}
+
+.top-img {
+  margin: 2rem 0;
+}
+
+.text-top {
+  div {
+    margin: 2.5rem 0;
+    color: $very-dark-red;
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      line-height: 1.5rem;
+      color: $very-dark-grayish-blue;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-top {
+    max-width: 50%;
+    text-align: left;
+  }
+}
