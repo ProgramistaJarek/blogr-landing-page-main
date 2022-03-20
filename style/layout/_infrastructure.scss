@@ -17,7 +17,7 @@
   .text-infra {
     text-align: center;
     font-family: $font-Ubuntu;
-    margin-top: 2rem;
+    margin-top: 10rem;
     h2 {
       font-weight: $font-300;
       font-size: 2rem;
@@ -38,10 +38,12 @@
   img {
     position: absolute;
     top: -5rem;
+    left: 0;
+    width: 100%;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .infrastructure {
     background-position: left;
     .text-infra {
@@ -52,5 +54,8 @@
   }
   .phone {
     width: 50%;
+    img{
+      width: auto;
+    }
   }
 }
