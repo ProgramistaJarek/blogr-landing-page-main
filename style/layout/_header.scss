@@ -66,6 +66,7 @@
         margin: 0 auto;
         color: $very-dark-black-blue;
         font-weight: $font-700;
+        cursor: pointer;
       }
       .sign-up {
         background: linear-gradient(
@@ -80,6 +81,11 @@
         margin-top: 1rem;
         border: none;
         border-radius: 999rem;
+        cursor: pointer;
+        &:hover {
+          background: $very-light-red;
+          color: $white;
+        }
       }
     }
   }
@@ -96,7 +102,7 @@
       font-size: $font-size;
     }
     button {
-      margin: 3rem 0 5rem;
+      margin: 3rem 0.5rem 5rem;
       background-color: $white;
       font-weight: $font-700;
       color: $light-red;
@@ -105,10 +111,19 @@
       border-radius: 999rem;
       width: 8rem;
       height: 2.5rem;
+      cursor: pointer;
+      &:hover {
+        background-color: $very-light-red;
+        color: $white;
+      }
       &:last-child {
         background-color: transparent;
         color: $white;
         border: 1px solid $white;
+        &:hover {
+          background-color: $white;
+          color: $light-red;
+        }
       }
     }
   }
@@ -158,6 +173,12 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        .login {
+          color: $white;
+          &:hover {
+            color: $very-dark-black-blue;
+          }
+        }
         .sign-up {
           background: $white;
           color: $very-dark-black-blue;
